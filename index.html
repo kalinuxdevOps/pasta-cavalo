@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Horse 3.0 - Pasta Regenerativa para Cascos</title>
+    <meta name="description" content="Pasta regenerativa Iron Horse 3.0 - Tratamento intensivo para cascos e bulbos de cavalos. Produto premium com tecnologia bio-revitalizadora.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* ===== RESET E BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', 'Segoe UI', sans-serif;
+            background: #f8f6f0;
+            color: #2d2a24;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: #1a1a1a;
+            color: #f5e6c8;
+            padding: 12px 0;
+            border-bottom: 3px solid #c9a84c;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img {
+            height: 42px;
+            width: auto;
+        }
+
+        .logo-text h1 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .logo-text h1 span {
+            color: #c9a84c;
+        }
+
+        .logo-text p {
+            font-size: 0.65rem;
+            letter-spacing: 2px;
+            color: #a8987a;
+            text-transform: uppercase;
+            margin-top: -2px;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2a24 100%);
+            padding: 70px 0;
+            color: #f5e6c8;
+            border-bottom: 1px solid #c9a84c20;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text h2 {
+            font-size: 3.2rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 8px;
+        }
+
+        .hero-text h2 span {
+            color: #c9a84c;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.3rem;
+            color: #d4c5a8;
+            font-weight: 300;
+            margin-bottom: 12px;
+        }
+
+        .hero-text .tagline {
+            font-size: 1rem;
+            color: #b8aa92;
+            margin-bottom: 25px;
+            max-width: 500px;
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .hero-badges span {
+            background: rgba(201, 168, 76, 0.12);
+            border: 1px solid rgba(201, 168, 76, 0.25);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #c9a84c;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-badges span i {
+            margin-right: 6px;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background: #25d366;
+            color: #fff;
+            padding: 16px 50px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 25px rgba(37, 211, 102, 0.35);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-whatsapp:hover {
+            transform: scale(1.04);
+            box-shadow: 0 6px 35px rgba(37, 211, 102, 0.5);
+            background: #20b85a;
+        }
+
+        .btn-whatsapp i {
+            margin-right: 10px;
+        }
+
+        .btn-secondary {
+            display: inline-block;
+            background: transparent;
+            color: #f5e6c8;
+            padding: 16px 40px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            border: 2px solid rgba(201, 168, 76, 0.4);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(201, 168, 76, 0.15);
+            border-color: #c9a84c;
+        }
+
+        .hero-image {
+            background: linear-gradient(145deg, #2d2a24, #1a1a1a);
+            border-radius: 16px;
+            padding: 45px 35px;
+            border: 1px solid #c9a84c30;
+            text-align: center;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image .icon-big {
+            font-size: 4.5rem;
+            color: #c9a84c;
+            margin-bottom: 10px;
+        }
+
+        .hero-image h3 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            letter-spacing: 4px;
+        }
+
+        .hero-image h3 span {
+            color: #c9a84c;
+        }
+
+        .hero-image p {
+            color: #a8987a;
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+
+        .hero-image .pillars-mini {
+            display: flex;
+            gap: 12px;
+            margin-top: 18px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero-image .pillars-mini span {
+            background: rgba(201, 168, 76, 0.1);
+            border: 1px solid rgba(201, 168, 76, 0.2);
+            padding: 5px 16px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            color: #c9a84c;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== SEÇÃO PILARES ===== */
+        .pillars-section {
+            padding: 70px 0;
+            background: #fff;
+        }
+
+        .pillars-section .section-title {
+            text-align: center;
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .pillars-section .section-title span {
+            color: #c9a84c;
+        }
+
+        .pillars-section .section-sub {
+            text-align: center;
+            color: #777;
+            font-size: 1.1rem;
+            margin-bottom: 45px;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .pillar-card {
+            background: #f8f6f0;
+            padding: 30px 20px 25px;
+            border-radius: 12px;
+            text-align: center;
+            border-bottom: 4px solid #c9a84c;
+            transition: transform 0.3s ease;
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .pillar-card i {
+            font-size: 2.6rem;
+            color: #c9a84c;
+            margin-bottom: 10px;
+        }
+
+        .pillar-card h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 6px;
+        }
+
+        .pillar-card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* ===== SEÇÃO PRODUTO ===== */
+        .product-section {
+            padding: 70px 0;
+            background: #f0ede6;
+        }
+
+        .product-section .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 40px;
+        }
+
+        .product-section .section-title span {
+            color: #c9a84c;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .product-box {
+            background: linear-gradient(145deg, #2d2a24, #1a1a1a);
+            border-radius: 16px;
+            padding: 45px 35px;
+            text-align: center;
+            border: 1px solid #c9a84c30;
+            min-height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-box .icon-big {
+            font-size: 4rem;
+            color: #c9a84c;
+            margin-bottom: 12px;
+        }
+
+        .product-box h2 {
+            color: #f5e6c8;
+            font-size: 2.6rem;
+            font-weight: 900;
+            letter-spacing: 3px;
+        }
+
+        .product-box h2 span {
+            color: #c9a84c;
+        }
+
+        .product-box .tagline {
+            color: #a8987a;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+
+        .product-details h3 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+
+        .product-details h3 span {
+            color: #c9a84c;
+        }
+
+        .product-details p {
+            color: #555;
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+        }
+
+        .product-details .features-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 18px 0 25px;
+        }
+
+        .product-details .feature-item {
+            background: #fff;
+            padding: 14px 16px;
+            border-radius: 10px;
+            border-left: 3px solid #c9a84c;
+        }
+
+        .product-details .feature-item i {
+            color: #c9a84c;
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .product-details .feature-item h5 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .product-details .feature-item p {
+            font-size: 0.8rem;
+            color: #777;
+            margin: 0;
+        }
+
+        /* ===== PLANOS ===== */
+        .plans {
+            padding: 70px 0;
+            background: #fff;
+        }
+
+        .plans .section-title {
+            text-align: center;
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 6px;
+        }
+
+        .plans .section-title span {
+            color: #c9a84c;
+        }
+
+        .plans .section-sub {
+            text-align: center;
+            color: #777;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .plan-card {
+            background: #f8f6f0;
+            border-radius: 16px;
+            padding: 35px 25px 30px;
+            text-align: center;
+            border: 1px solid #e8e0d4;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+        }
+
+        .plan-card.featured {
+            border: 2px solid #c9a84c;
+            background: #fffcf5;
+        }
+
+        .plan-card.featured::before {
+            content: "⭐ MAIS VENDIDO";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #c9a84c;
+            color: #1a1a1a;
+            padding: 3px 20px;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .plan-card .plan-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .plan-card .plan-price {
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #c9a84c;
+            margin: 8px 0;
+        }
+
+        .plan-card .plan-price small {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #777;
+        }
+
+        .plan-card .plan-desc {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+
+        .plan-card ul {
+            list-style: none;
+            text-align: left;
+            margin: 12px 0 22px;
+        }
+
+        .plan-card ul li {
+            padding: 5px 0;
+            border-bottom: 1px solid #ece6dc;
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        .plan-card ul li i {
+            color: #c9a84c;
+            margin-right: 10px;
+            width: 16px;
+        }
+
+        .plan-card .btn-plan {
+            display: inline-block;
+            background: #2d2a24;
+            color: #f5e6c8;
+            padding: 12px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .plan-card .btn-plan:hover {
+            background: #c9a84c;
+            color: #1a1a1a;
+        }
+
+        .plan-card.featured .btn-plan {
+            background: #c9a84c;
+            color: #1a1a1a;
+        }
+
+        .plan-card.featured .btn-plan:hover {
+            background: #b89a3e;
+        }
+
+        /* ===== SOBRE ===== */
+        .about {
+            padding: 70px 0;
+            background: #f0ede6;
+        }
+
+        .about .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+
+        .about-text h2 span {
+            color: #c9a84c;
+        }
+
+        .about-text p {
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+
+        .about-text ul {
+            list-style: none;
+            margin-top: 12px;
+        }
+
+        .about-text ul li {
+            padding: 6px 0;
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        .about-text ul li i {
+            color: #c9a84c;
+            margin-right: 12px;
+            width: 18px;
+        }
+
+        .about-box {
+            background: linear-gradient(135deg, #2d2a24, #1a1a1a);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            color: #f5e6c8;
+            min-height: 280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #c9a84c20;
+        }
+
+        .about-box img {
+            max-width: 160px;
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        .about-box h3 {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 4px;
+        }
+
+        .about-box p {
+            color: #a8987a;
+            font-size: 0.85rem;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #1a1a1a;
+            color: #a8987a;
+            padding: 40px 0 20px;
+        }
+
+        footer .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 30px;
+        }
+
+        footer h4 {
+            color: #f5e6c8;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        footer p, footer a {
+            font-size: 0.85rem;
+            color: #a8987a;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        footer a:hover {
+            color: #c9a84c;
+        }
+
+        footer i {
+            margin-right: 10px;
+            width: 18px;
+            color: #c9a84c;
+        }
+
+        footer .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        footer .footer-logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        footer .footer-logo h4 {
+            margin-bottom: 0;
+        }
+
+        footer .copyright {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding-top: 18px;
+            border-top: 1px solid #2d2a24;
+            font-size: 0.75rem;
+            color: #555;
+            margin-top: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== RESPONSIVO ===== */
+        @media (max-width: 992px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-text .tagline {
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-badges {
+                justify-content: center;
+            }
+            .hero-text .btn-group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .btn-secondary {
+                margin-left: 0;
+            }
+            .pillars-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .product-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .product-details .features-list {
+                grid-template-columns: 1fr 1fr;
+            }
+            .plans-grid {
+                grid-template-columns: 1fr;
+                max-width: 420px;
+                margin: 0 auto;
+            }
+            .about .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .about-text ul {
+                text-align: left;
+            }
+            footer .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-text h2 {
+                font-size: 2.4rem;
+            }
+            .hero-text .subtitle {
+                font-size: 1.1rem;
+            }
+            .hero-image {
+                min-height: 250px;
+                padding: 30px 20px;
+            }
+            .hero-image h3 {
+                font-size: 2rem;
+            }
+            .pillars-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+            }
+            .product-details .features-list {
+                grid-template-columns: 1fr;
+            }
+            .product-box {
+                min-height: 250px;
+                padding: 30px 20px;
+            }
+            .product-box h2 {
+                font-size: 2rem;
+            }
+            header .container {
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+            }
+            .logo {
+                flex-direction: column;
+            }
+            footer .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            footer .footer-logo {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-text h2 {
+                font-size: 1.8rem;
+            }
+            .btn-whatsapp {
+                padding: 14px 30px;
+                font-size: 1rem;
+                width: 100%;
+                text-align: center;
+            }
+            .btn-secondary {
+                padding: 14px 30px;
+                font-size: 1rem;
+                width: 100%;
+                text-align: center;
+            }
+            .pillars-grid {
+                grid-template-columns: 1fr;
+            }
+            .plan-card .plan-price {
+                font-size: 2.2rem;
+            }
+            .hero-badges span {
+                font-size: 0.7rem;
+                padding: 6px 12px;
+            }
+            .hero-image .pillars-mini span {
+                font-size: 0.65rem;
+                padding: 4px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="image.png" alt="Iron Horse" onerror="this.style.display='none'">
+                <div class="logo-text">
+                    <h1>Iron<span>Horse</span> 3.0</h1>
+                    <p>Pasta Regenerativa Profissional</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Pasta <span>Regenerativa</span><br>Iron Horse 3.0</h2>
+                    <p class="subtitle">Tratamento Intensivo para Cascos e Bulbos</p>
+                    <p class="tagline">
+                        Tecnologia bio-revitalizadora com ação antifúngica, hidratação profunda e estímulo ao crescimento da queratina.
+                    </p>
+
+                    <div class="hero-badges">
+                        <span><i class="fas fa-shield-alt"></i> Prata Coloidal</span>
+                        <span><i class="fas fa-leaf"></i> Óleo de Neem</span>
+                        <span><i class="fas fa-water"></i> Lanolina</span>
+                        <span><i class="fas fa-flask"></i> Copaíba</span>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="https://wa.me/553198462613?text=Olá! Gostaria de saber mais sobre a Pasta Iron Horse 3.0" 
+                           target="_blank" 
+                           class="btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> FALE COM UM ESPECIALISTA
+                        </a>
+                        <a href="#planos" class="btn-secondary">
+                            <i class="fas fa-arrow-down"></i> VER PLANOS
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="icon-big"><i class="fas fa-horse-head"></i></div>
+                    <h3>IRON <span>HORSE</span></h3>
+                    <p>Pasta para Casco · Regenerativa</p>
+                    <div class="pillars-mini">
+                        <span>REGENERA</span>
+                        <span>FORTALECE</span>
+                        <span>PROTEGE</span>
+                        <span>HIDRATA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PILARES ===== -->
+    <section class="pillars-section">
+        <div class="container">
+            <h2 class="section-title">4 <span>Pilares</span> de Performance</h2>
+            <p class="section-sub">Conheça os benefícios exclusivos da Iron Horse 3.0</p>
+
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <i class="fas fa-sync"></i>
+                    <h4>REGENERA</h4>
+                    <p>Estimula a queratina e acelera a recuperação natural do casco</p>
+                </div>
+                <div class="pillar-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h4>FORTALECE</h4>
+                    <p>Aumenta a resistência da muralha e previne rachaduras</p>
+                </div>
+                <div class="pillar-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>PROTEGE</h4>
+                    <p>Cria barreira contra fungos, bactérias e umidade excessiva</p>
+                </div>
+                <div class="pillar-card">
+                    <i class="fas fa-tint"></i>
+                    <h4>HIDRATA</h4>
+                    <p>Penetração profunda com lanolina e óleos essenciais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRODUTO ===== -->
+    <section class="product-section">
+        <div class="container">
+            <h2 class="section-title">Tecnologia <span>Bio-Revitalizadora</span></h2>
+
+            <div class="product-grid">
+                <div class="product-box">
+                    <div class="icon-big"><i class="fas fa-shield-virus"></i></div>
+                    <h2>IRON <span>HORSE</span></h2>
+                    <p class="tagline">Pasta para Casco · Regenerativa</p>
+                    <div style="margin-top:15px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+                        <span style="background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.2); padding:4px 14px; border-radius:50px; font-size:0.7rem; color:#c9a84c; font-weight:600;">REGENERA</span>
+                        <span style="background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.2); padding:4px 14px; border-radius:50px; font-size:0.7rem; color:#c9a84c; font-weight:600;">FORTALECE</span>
+                        <span style="background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.2); padding:4px 14px; border-radius:50px; font-size:0.7rem; color:#c9a84c; font-weight:600;">PROTEGE</span>
+                        <span style="background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.2); padding:4px 14px; border-radius:50px; font-size:0.7rem; color:#c9a84c; font-weight:600;">HIDRATA</span>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h3>O que a <span>Iron Horse 3.0</span> faz?</h3>
+                    <p>
+                        Desenvolvida para oferecer o máximo em cuidado e performance para os cascos do seu cavalo. 
+                        Cada pilar representa um benefício essencial para a saúde e desempenho do animal.
+                    </p>
+
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="fas fa-sync"></i>
+                            <h5>REGENERA</h5>
+                            <p>Estimula a queratina e acelera a recuperação</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-dumbbell"></i>
+                            <h5>FORTALECE</h5>
+                            <p>Aumenta a resistência da muralha do casco</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h5>PROTEGE</h5>
+                            <p>Barreira contra fungos e bactérias</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-tint"></i>
+                            <h5>HIDRATA</h5>
+                            <p>Penetração profunda com lanolina</p>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/553198462613?text=Olá! Quero saber mais sobre a Iron Horse 3.0" 
+                       target="_blank" 
+                       class="btn-whatsapp" style="padding:14px 40px; font-size:1rem;">
+                        <i class="fab fa-whatsapp"></i> QUERO EXPERIMENTAR
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PLANOS ===== -->
+    <section class="plans" id="planos">
+        <div class="container">
+            <h2 class="section-title">Escolha seu <span>Kit</span></h2>
+            <p class="section-sub">Produto premium com embalagem de 500g. Escolha a melhor opção para sua rotina.</p>
+
+            <div class="plans-grid">
+
+                <div class="plan-card">
+                    <div class="plan-name">Kit Iniciante</div>
+                    <div class="plan-price">R$ 397 <small>/ un</small></div>
+                    <p class="plan-desc">Ideal para teste e cavalos com pouca exigência.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 1 Pote de 500g</li>
+                        <li><i class="fas fa-check"></i> Aplicador profissional</li>
+                        <li><i class="fas fa-check"></i> Manual de uso</li>
+                    </ul>
+                    <a href="https://wa.me/553198462613?text=Olá! Quero o Kit Iniciante - R$ 397" 
+                       target="_blank" 
+                       class="btn-plan">
+                       <i class="fab fa-whatsapp"></i> COMPRAR
+                    </a>
+                </div>
+
+                <div class="plan-card featured">
+                    <div class="plan-name">Kit Cavalo Atleta</div>
+                    <div class="plan-price">R$ 597 <small>/ un</small></div>
+                    <p class="plan-desc">O mais vendido! Performance máxima para treinos intensos.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 2 Potes de 500g</li>
+                        <li><i class="fas fa-check"></i> Aplicador + Escova</li>
+                        <li><i class="fas fa-check"></i> Manual + Dicas de treino</li>
+                        <li><i class="fas fa-star" style="color:#c9a84c;"></i> <strong>Bônus:</strong> Guia de cuidados</li>
+                    </ul>
+                    <a href="https://wa.me/553198462613?text=Olá! Quero o Kit Cavalo Atleta - R$ 597" 
+                       target="_blank" 
+                       class="btn-plan">
+                       <i class="fab fa-whatsapp"></i> COMPRAR
+                    </a>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-name">Kit Haras Completo</div>
+                    <div class="plan-price">R$ 797 <small>/ un</small></div>
+                    <p class="plan-desc">Para criadores e haras com múltiplos animais.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 4 Potes de 500g</li>
+                        <li><i class="fas fa-check"></i> Kits de aplicação (4x)</li>
+                        <li><i class="fas fa-check"></i> Manual + Guia avançado</li>
+                        <li><i class="fas fa-star" style="color:#c9a84c;"></i> <strong>Bônus:</strong> Consultoria online</li>
+                    </ul>
+                    <a href="https://wa.me/553198462613?text=Olá! Quero o Kit Haras Completo - R$ 797" 
+                       target="_blank" 
+                       class="btn-plan">
+                       <i class="fab fa-whatsapp"></i> COMPRAR
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="about">
+        <div class="container">
+            <div class="about-text">
+                <h2>Desenvolvido por <span>especialistas</span></h2>
+                <p>
+                    A Iron Horse 3.0 nasceu da necessidade de um produto que unisse ciência e tradição no cuidado equestre. 
+                    Testada em haras de elite, nossa pasta é a escolha de criadores que exigem o melhor para seus animais.
+                </p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Fórmula 100% brasileira com insumos importados</li>
+                    <li><i class="fas fa-check-circle"></i> Aprovada por veterinários especializados</li>
+                    <li><i class="fas fa-check-circle"></i> Livre de parabenos e substâncias agressivas</li>
+                    <li><i class="fas fa-check-circle"></i> Garantia de satisfação ou seu dinheiro de volta</li>
+                </ul>
+            </div>
+            <div class="about-box">
+                <img src="image.png" alt="Iron Horse" onerror="this.style.display='none'">
+                <h3>IRON HORSE</h3>
+                <p>Excelência em cuidados equestres</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div>
+                <div class="footer-logo">
+                    <img src="image.png" alt="Iron Horse" onerror="this.style.display='none'">
+                    <h4>Iron Horse 3.0</h4>
+                </div>
+                <p>Pasta Regenerativa Profissional</p>
+                <p><i class="fas fa-id-card"></i> CNPJ: 47.600.401/0001-46</p>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:+553198462613">(31) 98462-613</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:goiasfabri1998@gmail.com">goiasfabri1998@gmail.com</a></p>
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/553198462613" target="_blank">WhatsApp</a></p>
+            </div>
+            <div>
+                <h4>Endereço</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Goiás - Brasil</p>
+                <p><i class="fas fa-clock"></i> Seg. a Sex.: 08h às 18h</p>
+                <p><i class="fas fa-clock"></i> Sábado: 08h às 12h</p>
+            </div>
+            <div>
+                <h4>Links Rápidos</h4>
+                <p><a href="#planos"><i class="fas fa-chevron-right"></i> Planos</a></p>
+                <p><a href="https://wa.me/553198462613" target="_blank"><i class="fas fa-chevron-right"></i> WhatsApp</a></p>
+                <p><a href="mailto:goiasfabri1998@gmail.com"><i class="fas fa-chevron-right"></i> E-mail</a></p>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Iron Horse 3.0 - Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
