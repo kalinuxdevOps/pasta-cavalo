@@ -550,6 +550,42 @@
             background: #b89a3e;
         }
 
+        /* ===== BOTÃO COM ÍCONE BRAIP ===== */
+        .btn-checkout {
+            display: inline-block;
+            background: #2d2a24;
+            color: #f5e6c8;
+            padding: 14px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+        }
+
+        .btn-checkout:hover {
+            background: #c9a84c;
+            color: #1a1a1a;
+            transform: scale(1.02);
+        }
+
+        .btn-checkout i {
+            margin-right: 10px;
+        }
+
+        .plan-card.featured .btn-checkout {
+            background: #c9a84c;
+            color: #1a1a1a;
+        }
+
+        .plan-card.featured .btn-checkout:hover {
+            background: #b89a3e;
+        }
+
         /* ===== SOBRE ===== */
         .about {
             padding: 70px 0;
@@ -819,6 +855,10 @@
                 font-size: 0.65rem;
                 padding: 4px 10px;
             }
+            .btn-checkout {
+                padding: 12px 20px;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -977,6 +1017,7 @@
 
             <div class="plans-grid">
 
+                <!-- PLANO 397 - KIT INICIANTE -->
                 <div class="plan-card">
                     <div class="plan-name">Kit Iniciante</div>
                     <div class="plan-price">R$ 397 <small>/ un</small></div>
@@ -986,13 +1027,14 @@
                         <li><i class="fas fa-check"></i> Aplicador profissional</li>
                         <li><i class="fas fa-check"></i> Manual de uso</li>
                     </ul>
-                    <a href="https://wa.me/553198462613?text=Olá! Quero o Kit Iniciante - R$ 397" 
+                    <a href="https://pay.braip.co/checkout/pla0xdm8/chex0016" 
                        target="_blank" 
-                       class="btn-plan">
-                       <i class="fab fa-whatsapp"></i> COMPRAR
+                       class="btn-checkout">
+                        <i class="fas fa-shopping-cart"></i> COMPRAR AGORA
                     </a>
                 </div>
 
+                <!-- PLANO 597 - KIT CAVALO ATLETA (DESTAQUE) -->
                 <div class="plan-card featured">
                     <div class="plan-name">Kit Cavalo Atleta</div>
                     <div class="plan-price">R$ 597 <small>/ un</small></div>
@@ -1003,13 +1045,14 @@
                         <li><i class="fas fa-check"></i> Manual + Dicas de treino</li>
                         <li><i class="fas fa-star" style="color:#c9a84c;"></i> <strong>Bônus:</strong> Guia de cuidados</li>
                     </ul>
-                    <a href="https://wa.me/553198462613?text=Olá! Quero o Kit Cavalo Atleta - R$ 597" 
+                    <a href="https://pay.braip.co/checkout/play48wo/chekrrjl" 
                        target="_blank" 
-                       class="btn-plan">
-                       <i class="fab fa-whatsapp"></i> COMPRAR
+                       class="btn-checkout">
+                        <i class="fas fa-shopping-cart"></i> COMPRAR AGORA
                     </a>
                 </div>
 
+                <!-- PLANO 797 - KIT HARAS COMPLETO -->
                 <div class="plan-card">
                     <div class="plan-name">Kit Haras Completo</div>
                     <div class="plan-price">R$ 797 <small>/ un</small></div>
@@ -1020,10 +1063,10 @@
                         <li><i class="fas fa-check"></i> Manual + Guia avançado</li>
                         <li><i class="fas fa-star" style="color:#c9a84c;"></i> <strong>Bônus:</strong> Consultoria online</li>
                     </ul>
-                    <a href="https://wa.me/553198462613?text=Olá! Quero o Kit Haras Completo - R$ 797" 
+                    <a href="https://pay.braip.co/checkout/plar4vm4/che000kr" 
                        target="_blank" 
-                       class="btn-plan">
-                       <i class="fab fa-whatsapp"></i> COMPRAR
+                       class="btn-checkout">
+                        <i class="fas fa-shopping-cart"></i> COMPRAR AGORA
                     </a>
                 </div>
 
