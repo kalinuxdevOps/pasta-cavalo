@@ -522,8 +522,16 @@
             width: 16px;
         }
 
-        /* Badge de entrega dentro dos cards */
-        .delivery-badge {
+        /* Badges de info (entrega e garantia) */
+        .info-badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin: 6px 0 16px;
+        }
+
+        .info-badge {
             display: inline-flex;
             align-items: center;
             gap: 6px;
@@ -534,16 +542,15 @@
             font-size: 0.7rem;
             font-weight: 600;
             color: #555;
-            margin: 6px 0 16px;
         }
 
-        .delivery-badge img {
+        .info-badge img {
             height: 20px;
             width: auto;
             border-radius: 4px;
         }
 
-        .delivery-badge i {
+        .info-badge i {
             color: #c9a84c;
             font-size: 0.8rem;
         }
@@ -878,7 +885,7 @@
                 padding: 12px 20px;
                 font-size: 0.9rem;
             }
-            .delivery-badge img {
+            .info-badge img {
                 height: 16px;
             }
         }
@@ -918,7 +925,7 @@
                     </div>
 
                     <div class="btn-group">
-                        <a href="https://wa.me/553198462613?text=Olá! Gostaria de saber mais sobre a Pasta Iron Horse 3.0" 
+                        <a href="https://wa.me/553184626132?text=Olá! Gostaria de saber mais sobre a Pasta Iron Horse 3.0" 
                            target="_blank" 
                            class="btn-whatsapp">
                             <i class="fab fa-whatsapp"></i> FALE COM UM ESPECIALISTA
@@ -1021,7 +1028,7 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/553198462613?text=Olá! Quero saber mais sobre a Iron Horse 3.0" 
+                    <a href="https://wa.me/553184626132?text=Olá! Quero saber mais sobre a Iron Horse 3.0" 
                        target="_blank" 
                        class="btn-whatsapp" style="padding:14px 40px; font-size:1rem;">
                         <i class="fab fa-whatsapp"></i> QUERO EXPERIMENTAR
@@ -1043,11 +1050,17 @@
                 <div class="plan-card">
                     <div class="plan-name">Kit Iniciante</div>
                     <div class="plan-price">R$ 397 <small>/ un</small></div>
-                    <!-- BADGE DE ENTREGA -->
-                    <div class="delivery-badge">
-                        <img src="https://i.ibb.co/kVrGPGPf/Whats-App-Image-2026-06-26-at-14-41-19.jpg" alt="Entrega" onerror="this.style.display='none'">
-                        <i class="fas fa-truck"></i> Entrega em 7 a 14 dias
+                    
+                    <div class="info-badges">
+                        <div class="info-badge">
+                            <img src="https://i.ibb.co/kVrGPGPf/Whats-App-Image-2026-06-26-at-14-41-19.jpg" alt="Entrega" onerror="this.style.display='none'">
+                            <i class="fas fa-truck"></i> Entrega em 7 a 14 dias
+                        </div>
+                        <div class="info-badge">
+                            <i class="fas fa-shield-alt"></i> Garantia de 14 dias
+                        </div>
                     </div>
+
                     <p class="plan-desc">Ideal para teste e cavalos com pouca exigência.</p>
                     <ul>
                         <li><i class="fas fa-check"></i> 1 Pote de 500g</li>
@@ -1065,11 +1078,17 @@
                 <div class="plan-card featured">
                     <div class="plan-name">Kit Cavalo Atleta</div>
                     <div class="plan-price">R$ 597 <small>/ un</small></div>
-                    <!-- BADGE DE ENTREGA -->
-                    <div class="delivery-badge">
-                        <img src="https://i.ibb.co/kVrGPGPf/Whats-App-Image-2026-06-26-at-14-41-19.jpg" alt="Entrega" onerror="this.style.display='none'">
-                        <i class="fas fa-truck"></i> Entrega em 7 a 14 dias
+
+                    <div class="info-badges">
+                        <div class="info-badge">
+                            <img src="https://i.ibb.co/kVrGPGPf/Whats-App-Image-2026-06-26-at-14-41-19.jpg" alt="Entrega" onerror="this.style.display='none'">
+                            <i class="fas fa-truck"></i> Entrega em 7 a 14 dias
+                        </div>
+                        <div class="info-badge">
+                            <i class="fas fa-shield-alt"></i> Garantia de 14 dias
+                        </div>
                     </div>
+
                     <p class="plan-desc">O mais vendido! Performance máxima para treinos intensos.</p>
                     <ul>
                         <li><i class="fas fa-check"></i> 2 Potes de 500g</li>
@@ -1088,11 +1107,17 @@
                 <div class="plan-card">
                     <div class="plan-name">Kit Haras Completo</div>
                     <div class="plan-price">R$ 797 <small>/ un</small></div>
-                    <!-- BADGE DE ENTREGA -->
-                    <div class="delivery-badge">
-                        <img src="https://i.ibb.co/kVrGPGPf/Whats-App-Image-2026-06-26-at-14-41-19.jpg" alt="Entrega" onerror="this.style.display='none'">
-                        <i class="fas fa-truck"></i> Entrega em 7 a 14 dias
+
+                    <div class="info-badges">
+                        <div class="info-badge">
+                            <img src="https://i.ibb.co/kVrGPGPf/Whats-App-Image-2026-06-26-at-14-41-19.jpg" alt="Entrega" onerror="this.style.display='none'">
+                            <i class="fas fa-truck"></i> Entrega em 7 a 14 dias
+                        </div>
+                        <div class="info-badge">
+                            <i class="fas fa-shield-alt"></i> Garantia de 14 dias
+                        </div>
                     </div>
+
                     <p class="plan-desc">Para criadores e haras com múltiplos animais.</p>
                     <ul>
                         <li><i class="fas fa-check"></i> 4 Potes de 500g</li>
@@ -1124,7 +1149,7 @@
                     <li><i class="fas fa-check-circle"></i> Fórmula 100% brasileira com insumos importados</li>
                     <li><i class="fas fa-check-circle"></i> Aprovada por veterinários especializados</li>
                     <li><i class="fas fa-check-circle"></i> Livre de parabenos e substâncias agressivas</li>
-                    <li><i class="fas fa-check-circle"></i> Garantia de satisfação ou seu dinheiro de volta</li>
+                    <li><i class="fas fa-check-circle"></i> Garantia de satisfação ou seu dinheiro de volta em 14 dias</li>
                 </ul>
             </div>
             <div class="about-box">
@@ -1150,12 +1175,16 @@
                     <img src="https://i.ibb.co/kVrGPGPf/Whats-App-Image-2026-06-26-at-14-41-19.jpg" alt="Entrega" onerror="this.style.display='none'">
                     <span><i class="fas fa-truck" style="color:#c9a84c;"></i> Entrega em 7 a 14 dias úteis</span>
                 </div>
+                <div class="footer-delivery" style="margin-top:4px;">
+                    <i class="fas fa-shield-alt" style="color:#c9a84c;"></i>
+                    <span style="font-size:0.75rem; color:#a8987a;">Garantia de 14 dias</span>
+                </div>
             </div>
             <div>
                 <h4>Contato</h4>
-                <p><i class="fas fa-phone-alt"></i> <a href="tel:+553198462613">(31) 98462-613</a></p>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:+553184626132">(31) 8462-6132</a></p>
                 <p><i class="fas fa-envelope"></i> <a href="mailto:goiasfabri1998@gmail.com">goiasfabri1998@gmail.com</a></p>
-                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/553198462613" target="_blank">WhatsApp</a></p>
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/553184626132" target="_blank">WhatsApp</a></p>
             </div>
             <div>
                 <h4>Endereço</h4>
@@ -1166,7 +1195,7 @@
             <div>
                 <h4>Links Rápidos</h4>
                 <p><a href="#planos"><i class="fas fa-chevron-right"></i> Planos</a></p>
-                <p><a href="https://wa.me/553198462613" target="_blank"><i class="fas fa-chevron-right"></i> WhatsApp</a></p>
+                <p><a href="https://wa.me/553184626132" target="_blank"><i class="fas fa-chevron-right"></i> WhatsApp</a></p>
                 <p><a href="mailto:goiasfabri1998@gmail.com"><i class="fas fa-chevron-right"></i> E-mail</a></p>
             </div>
             <div class="copyright">
